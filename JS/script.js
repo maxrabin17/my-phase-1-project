@@ -34,7 +34,7 @@ function fetchWeather(zipCode) {
     fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${zipCode}`, weather) //string interpolates the zipcode to the end of the API URL, Key is in second parameter 
         .then(response => response.json()) //converts response to json
         .then((data) => { //converts data into the information displayed
-            console.log(data)
+            //console.log(data)
             const name = data.location.name; //sets variable equal to location in API of Name of Town or City
             //const { location: {name}} = data
             //const { name } = data.location;
